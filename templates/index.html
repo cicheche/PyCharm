@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<ul data-v-1344465b="" class="rank_list">
+    {% for data in music_list %}
+    <li data-v-1344465b="" class="song_item flex_c">
+        <div data-v-1344465b="" class="song_rank flex_c">
+            <div data-v-1344465b="" class="rank_num top1"></div> <!---->
+            <div data-v-1344465b="" class="status"><!----> <!----> <!----> <!----></div>
+            <img data-v-1344465b="" alt="" class="cover" data-src="https://img3.kuwo.cn/star/albumcover/120/20/88/3273318513.jpg" src="https://img3.kuwo.cn/star/albumcover/120/20/88/3273318513.jpg" lazy="loaded"></div>
+        <div data-v-1344465b="" class="song_name flex_c">
+            <a data-v-1344465b="" title="刺客" href="/detail/{{data.id}}" class="name">{{data.name}}</a> <i data-v-1344465b="" class="type iconfont icon-tag_wusun"></i> <!----></div> <div data-v-1344465b="" class="song_artist">
+        <span data-v-1344465b="" title="灼夭&amp;国风新语&amp;戾格&amp;小田音乐社">{{data.singer}}</span></div>
+        <div data-v-1344465b="" class="song_album"><span data-v-1344465b="" title="刺客">{{data.name}}</span></div> <div data-v-1344465b="" class="song_time">
+        <span data-v-1344465b="">{{data.s_time}}</span></div> <div data-v-1344465b="" class="song_opts flex_c"><i data-v-1344465b="" class="iconfont icon-icon_play_"></i> <i data-v-1344465b="" class="iconfont icon-playlist_icon_add_"></i> <i data-v-1344465b="" class="iconfont icon-bar_icon_heart_"></i> <i data-v-1344465b="" class="iconfont icon-bar_icon_download_"></i></div>
+    </li>
+        {% endfor %}
+</ul>
+{% endblock %}

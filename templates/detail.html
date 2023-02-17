@@ -1,0 +1,12 @@
+{% extends 'detail_base.html' %}
+{% block content %}
+<section class="all-comment" style="display:;">
+    <div class="type"><span>热门评论</span> <span class="comment-num">{{co.comment|length}}</span></div>
+    <div class="each-comment"><div class="each-comment-avatar"><img alt="" data-src="http://img1.kuwo.cn/star/userhead/34/18/1622344498921_489741534s.jpg" src="http://img1.kuwo.cn/star/userhead/34/18/1622344498921_489741534s.jpg" lazy="loaded"></div>
+        <div class="each-comment-msg"><div class="each-comment-nickname"><span>{{co.username}}</span> <i class=""></i></div>
+            <div class="each-comment-content text-selection">{{co.comment}}<img src="https://h5static.kuwo.cn/www/kw-www/img/emoji_1.79944bb.png"><img src="https://h5static.kuwo.cn/www/kw-www/img/emoji_1.79944bb.png"></div> <!---->
+            <div class="each-comment-time"><div class="time">
+            {{co.c_time}}</div></div>
+        </div></div>
+</section>
+{%endblock%}
